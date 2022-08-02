@@ -10,7 +10,7 @@ class MyCircularQueue:
         if self.is_full():
             return False
         if self.front == -1:
-            self.front, self.rear = 0
+            self.front, self.rear = 0,0
         else:
             self.rear = (self.rear + 1) % self.size
         self.queue[self.rear] = value
